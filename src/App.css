@@ -1,0 +1,72 @@
+.app{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+.gameBoard{
+    height: 300px ;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle{
+    height:90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 15px solid blue;
+    box-sizing: border-box;
+
+}
+.cross{
+    height:90px;
+    width: 90px;
+    position: relative;
+    rotate: 45deg;
+}
+.cross:before,.cross:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+.cross:before{
+    left: 50%;
+    width: 30%;
+    margin-left: -15% ;
+    height: 100%;
+}
+.cross:after{
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+.gradient-button {
+    background: linear-gradient(to right, #ff6b6b, #556270);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(to right, #556270, #ff6b6b);
+  }
